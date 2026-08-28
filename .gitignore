@@ -1,0 +1,56 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+
+# IDE
+.idea/
+.vscode/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Experiment outputs
+checkpoint/
+checkpoints/
+logs/
+log/
+outputs/
+results/
+runs/
+
+# Model files
+*.pt
+*.pth
+*.ckpt
+*.bin
+*.safetensors
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+.DS_Store
+Thumbs.db
+
+# Local configuration and secrets
+.env
+.env.*
+*.key
+*.pem
+credentials.json
+
+# Python packaging
+*.egg-info/
+dist/
+build/
+
+# Local caches
+.cache/
