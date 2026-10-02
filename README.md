@@ -1,10 +1,10 @@
-# HGDM
-This is the official code for **HGDM** (Hierarchical Graph Diffusion Model for Multi-Behavior Recommendation)
+# HGD
+This is the official code for **HGD** (Hierarchical Graph Diffusion for Multi-Behavior Recommendation)
 
 
 
 ## Datasets
-The statistics of datasets used in HGDM are summarized as follows.   
+The statistics of datasets used in HGD are summarized as follows.   
 | Dataset | Users  | Items  | Views       | Collects        | Carts         | Buys   |
 |---------|--------:|--------:|-------------:|-----------------:|---------------:|--------:|
 | Taobao  | 15,449 | 11,953 | 873,954 | -          | 195,476  | 92,180 |
@@ -23,7 +23,7 @@ python ./data/preprocess.py
 ### Train our model from scratch
 You can train the model with the best hyperparameters for each dataset by typing the following command in your terminal:
 
-#### Train HGDM in the `Taobao` dataset
+#### Train HGD in the `Taobao` dataset
 ```python
 python ./src/main.py --dataset taobao \
                      --aux_keep_ratio 0.8 \
@@ -39,7 +39,7 @@ python ./src/main.py --dataset taobao \
                      --batch_size 1024
 ```
 
-#### Train HGDM in the `Tmall` dataset
+#### Train HGD in the `Tmall` dataset
 ```python
 python ./src/main.py --dataset tmall \
                      --aux_keep_ratio 0.8 \
@@ -55,7 +55,7 @@ python ./src/main.py --dataset tmall \
                      --batch_size 1024
 ```
 
-#### Train HGDM in the `Beibei` dataset
+#### Train HGD in the `Beibei` dataset
 ```python
 python ./src/main.py --dataset beibei \
                      --aux_keep_ratio 0.4 \
