@@ -20,7 +20,7 @@ class BPRLoss(nn.Module):
         return loss.mean()
 
 
-class HGDM(nn.Module):
+class HGD(nn.Module):
 
     def __init__(
         self,
@@ -55,7 +55,7 @@ class HGDM(nn.Module):
         lambda_cl=0.1,
         cl_temperature=0.2,
     ):
-        super(HGDM, self).__init__()
+        super(HGD, self).__init__()
         self.edge_dict = data['edge_dict']
         for key in self.edge_dict:
             if isinstance(self.edge_dict[key], torch.Tensor):
