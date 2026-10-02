@@ -1,7 +1,7 @@
 import os
 import torch
 from data import load_data
-from model import HGDM, Trainer
+from model import HGD, Trainer
 from parser import parse_args
 from utils import set_seed, print_args
 from loguru import logger
@@ -22,7 +22,7 @@ def main(args):
         else:
             data['target_behavior'] = data['bsg_types'][-1]
 
-    model = HGDM(
+    model = HGD(
         data,
         args.emb_dim,
         args.ubg_gnn_layers,
